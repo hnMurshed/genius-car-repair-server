@@ -135,6 +135,9 @@ run().catch(console.dir);
 app.get('/', (req, res) => {
     res.send('geniu car repair server is running')
 })
+app.get('/testheroku', (req, res) => {
+    res.send('Heroku working after changing server')
+})
 
 app.listen(port, () => {
     console.log('Listening to the port', port);
